@@ -75,8 +75,9 @@ nav a:visited
 
 #slider_image img
 {
-	max-width: 100%;
+	width: 100%;
 	padding-top: 100px;
+	position: relative;
 }
 
 #slider_image
@@ -88,8 +89,19 @@ nav a:visited
 {
 	position: absolute;
 	color: white;
-	width: 30%;
-	font-size: large;
+	width: 40%;
+	top: 270px;
+	left: 130px;
+}
+
+#slider_description h1
+{
+	font-size: xx-large;
+}
+
+#slider_description p
+{
+	font-size: small;
 }
 
 button
@@ -102,7 +114,8 @@ button
 	border-top: hidden; 
 	border-left: hidden;
 	border-right: hidden;
-	height: 33px; 
+	height: 33px;
+	width: 90px; 
 }
 
 #half_right
@@ -113,6 +126,8 @@ button
 	border-radius: 50% / 100% 100% 0 0;
 	transform: rotate(270deg);
 	position: absolute;
+	top: 370px;
+	right: -12px;
 }
 
 #half_left
@@ -123,6 +138,8 @@ button
 	border-radius: 50% / 100% 100% 0 0;
 	transform: rotate(90deg);
 	position: absolute;
+	top: 370px;
+	left: -12px;
 }
 
 .fa-chevron-right
@@ -130,7 +147,8 @@ button
 	color: white;
 	margin-top: 6px;
 	margin-left: 20px;
-	transform: rotate(90deg)
+	transform: rotate(90deg);
+	font-size: initial;
 }
 
 .fa-chevron-left
@@ -139,14 +157,7 @@ button
 	margin-left: 18px;
 	margin-top: 6px;
 	transform: rotate(270deg);
-}
-
-.fa-chevron-left
-{
-	color: white;
-	margin-left: 18px;
-	margin-top: 6px;
-	transform: rotate(270deg);
+	font-size: initial;
 }
 
 /* Nos Services */
@@ -160,7 +171,7 @@ button
 
 #services
 {
-	padding-top: 300px;
+	padding-top: 15px;
 }
 
 .grey_line
@@ -204,12 +215,14 @@ button
 {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 #conteneur_services
 {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .logo
@@ -236,8 +249,9 @@ i
 {
 	color: rgb(91,172,210);
 	position: absolute;
-	margin-left: 17px;
-	margin-top: -15px;
+	margin-left: 13px;
+	margin-top: -19px;
+	font-size: x-large;
 }
 
 .para li
@@ -394,6 +408,11 @@ i
 
 }
 
+#portfolio_display i
+{
+	font-size: inherit;
+}
+
 .conteneur
 {
 	position: relative;
@@ -408,7 +427,7 @@ i
 	background-color: rgba(0,0,0,0.5);
 	display: none;
 	min-width: 100%;
-	margin-top: -66px;
+	bottom: 4px;
 	height: 40%;
 	font-size: xx-small;
 }
@@ -439,19 +458,17 @@ i
 
 /* Footer et Contact */
 
+#map
+{
+	background-color: rgba(148,196,240,1);
+}
+
 iframe
 {
 	width: 100%;
 	height: 800px;
 	border-style: hidden;
-}
-
-#blue_layer
-{
-	position: absolute;
-	background-color: rgba(89,166,255,0.3);
-	width: 99%;
-	height: 800px;
+	opacity: 0.5;
 }
 
 #contact_info img
@@ -525,7 +542,7 @@ span
 	color: rgb(91,172,210)
 }
 
-@media screen and (max-device-width: 768px) and (orientation: portrait)
+@media screen and (max-device-width: 500px) and (orientation: portrait)
 {
 	body	{
 		width: auto;
@@ -553,19 +570,26 @@ span
 		padding-top: 50px;
 	}
 
-	#slider_image	{
+	#slider_image img, #slider_image i, #half_left, #half_right	{
 		display: none;
 	}
 
-	#slider_description{
+	#slider_description {
 		color: black;
 		margin: auto;
 		width: auto;
+		margin-left: 10px;
 		padding-top: 85px;
+		top: -50px;
+		left: auto;
 	}
 
 	#slider_description button	{
 		display: none;
+	}
+
+	#services 	{
+		padding-top: 240px;
 	}
 
 	#services_content	{
@@ -585,7 +609,8 @@ span
 	}
 
 	#project 	{
-		width: 320px;
+		width: 80%;
+		min-width: 320px;
 	}
 
 	#contact_info	{
@@ -593,10 +618,6 @@ span
 		flex-direction: column;
 		align-items: center;
 		padding-top: 10px;
-	}
-
-	#blue_layer	{
-		height: 500px;
 	}
 
 	#map {
@@ -630,22 +651,18 @@ span
 		width: 400px;
 	}
 
-	#slider_image	{
+	#slider_image img, #slider_image i, #half_left, #half_right, #slider_description button	{
 		display: none;
 	}
 
-	#slider-description, button, .fa-chevron-left, #chevron_left	{
-		display: none;
-	}
-
-	#slider_description	{
-		position: relative;
-		margin-top: auto;
-		font-size: medium;
-		color: initial;
+	#slider_description {
+		color: black;
+		margin: auto;
 		width: auto;
-		margin-left: auto;
-		padding-top: 68px;
+		margin-left: 10px;
+		padding-top: 95px;
+		top: -50px;
+		left: auto;
 		text-align: center;
 	}
 
@@ -656,7 +673,7 @@ span
 	}
 
 	#services {
-		padding-top: 0px;
+		padding-top: 140px;
 	}
 
 	#services_content	{
@@ -664,11 +681,6 @@ span
 		flex-direction: column;
 		align-items: center;
 	}
-
-	#blue_layer	{
-		width: 98%;
-	}
-
 	form	{
 		width: auto;
 		height: auto;
@@ -676,5 +688,21 @@ span
 
 	.text 	{
 		margin-top: -65px;
+	}
+}
+
+@media screen and (max-device-width: 1280px) 
+{
+
+	#half_left, #half_right {
+		top: 275px;
+	}
+
+	#slider_description {
+		top: 210px;
+	}
+
+	#slider_description h1, #slider_description p {
+		font-size: medium;
 	}
 }
