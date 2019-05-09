@@ -641,59 +641,6 @@ span
 	}
 }
 
-@media screen and (max-device-width: 768px) and (orientation: landscape)
-{
-	body	{
-		max-width:	100%;
-	}
-
-	#logo	{
-		margin-left: auto;
-	}
-
-	nav	{
-		width: 400px;
-	}
-
-	#slider_image img, #slider_image i, #half_left, #half_right, #slider_description button	{
-		display: none;
-	}
-
-	#slider_description {
-		color: black;
-		margin: auto;
-		width: auto;
-		margin-left: 10px;
-		top: -50px;
-		left: auto;
-		text-align: center;
-	}
-
-	#conteneur_slider	{
-		max-width: 100%;
-		height: auto;
-		padding-bottom: 10px;
-	}
-
-	#services {
-		padding-top: 140px;
-	}
-
-	#services_content	{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	form	{
-		width: auto;
-		height: auto;
-	}
-
-	.text 	{
-		margin-top: -65px;
-	}
-}
-
 @media screen and (min-width: 881px) and (max-width: 1280px) 
 {
 
@@ -710,10 +657,9 @@ span
 	}
 }
 
-@media screen and (min-width: 700px) and (max-width: 880px)
+@media screen and (min-width: 699px) and (max-width: 880px)
 {
 	#slider_description	{
-		position: relative;
 		top: 112px;
 	}
 
@@ -722,7 +668,7 @@ span
 	}
 
 	#slider_description h1, #slider_description p {
-	font-size: x-large;
+	font-size: large;
 	}
 
 	#slider_description button {
@@ -738,7 +684,7 @@ span
 
 }
 
-@media screen and (min-width: 451px) and (max-width: 699px)
+@media screen and (min-width: 450px) and (max-width: 699px)
 {
 	#logo {
 		margin-left: auto;
@@ -772,3 +718,4 @@ span
 		padding-top: 270px;
 	}
 }
+
