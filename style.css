@@ -240,11 +240,6 @@ button
 	margin-left: 15px;
 }
 
-#main-feature
-{
-
-}
-
 i
 {
 	color: rgb(91,172,210);
@@ -550,6 +545,12 @@ span
 
 	header	{
 		position: initial;
+		height: auto;
+	}
+
+	ul {
+		padding-right: 10%;
+		padding-left: 10%;
 	}
 
 	nav	{
@@ -559,10 +560,6 @@ span
 	z-index: 2;
 	top: 0;
 	background-color: white;
-	}
-
-	nav ul	{
-		padding-left: 60px;
 	}
 
 	#logo	{
@@ -718,4 +715,3 @@ span
 		padding-top: 270px;
 	}
 }
-
