@@ -10,40 +10,33 @@ header
 	position: fixed;
 	background-color: white;
 	width: 100%;
-	height: 77px;
+	height: 70px;
 	top: 0;
 	z-index: 1;
-}
-
-#logo	
-{
-	margin-left: 20px;
-	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 nav
 {
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 420px;
-	height: 54px;
-	background-color: white;
+
 }
 
 nav	ul	
 {
 	display: flex;
 	list-style-type: none;
-	margin-top: 0px;
+	align-items: center;
+	height: 70px;
 }
 
 nav li
 {
 	display: block;
 	width: 90px;
-	height: 37px;
-	padding-top: 16px;
+	padding-top: 20px;
+	height: 47px;
 	text-align: center;
 	background-color: white;
 }
@@ -51,7 +44,7 @@ nav li
 nav li:hover
 {
 	border-top: 3px solid rgb(91,172,210);
-	padding-top: 14px;
+	padding-top: 20px;
 }
 
 nav a
@@ -62,7 +55,7 @@ nav a
 nav #active
 {
 	border-top: 3px solid rgb(91,172,210);
-	padding-top: 14px;
+	padding-top: 20px;
 }
 
 nav a:visited
@@ -73,10 +66,14 @@ nav a:visited
 
 /* Slider */
 
+#conteneur_slider
+{
+	margin-top: 70px;
+}
+
 #slider_image img
 {
 	width: 100%;
-	padding-top: 100px;
 	position: relative;
 }
 
@@ -90,7 +87,7 @@ nav a:visited
 	position: absolute;
 	color: white;
 	width: 40%;
-	top: 270px;
+	top: 200px;
 	left: 130px;
 }
 
@@ -126,8 +123,11 @@ button
 	border-radius: 50% / 100% 100% 0 0;
 	transform: rotate(270deg);
 	position: absolute;
-	top: 370px;
+	top: 260px;
 	right: -12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #half_left
@@ -138,26 +138,27 @@ button
 	border-radius: 50% / 100% 100% 0 0;
 	transform: rotate(90deg);
 	position: absolute;
-	top: 370px;
+	top: 260px;
 	left: -12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.fa-chevron-right
+#chevron_right
 {
 	color: white;
-	margin-top: 6px;
-	margin-left: 20px;
 	transform: rotate(90deg);
-	font-size: initial;
+	font-size: x-large;
+	margin-top: 4px;
 }
 
-.fa-chevron-left
+#chevron_left
 {
 	color: white;
-	margin-left: 18px;
-	margin-top: 6px;
 	transform: rotate(270deg);
-	font-size: initial;
+	font-size: x-large;
+	margin-top: 4px;
 }
 
 /* Nos Services */
@@ -171,6 +172,7 @@ button
 
 #services
 {
+	text-align: center;
 	padding-top: 15px;
 }
 
@@ -179,6 +181,7 @@ button
 	height: 1px;
 	width: 90px;
 	background-color: rgb(229,229,229);
+	margin: 0 auto;
 }
 
 
@@ -203,12 +206,6 @@ button
 	border-radius: 50%;
 	position: absolute;
 	margin-left: 1px;
-}
-
-#services p
-{
-	text-align: center;
-	max-width: 900px;
 }
 
 #services_content
@@ -311,6 +308,7 @@ i
 	background-color: rgb(229,229,229);
 	width: 348px;
 	border-radius: 2px;
+	margin: 0 auto;
 }
 
 .button
@@ -400,7 +398,7 @@ i
 	justify-content: center;
 	flex-wrap: wrap;
 	max-width: 1000px;
-
+	margin: 0 auto;
 }
 
 #portfolio_display i
@@ -476,7 +474,7 @@ form
 	background-color: rgba(255,255,255,0.8);
 	width: 25%;
 	padding-left: 17px;
-	height: 465px;
+	height: auto;
 	position: absolute;
 	right: 10%;
 	margin-top: -670px;
@@ -548,7 +546,8 @@ span
 		height: auto;
 	}
 
-	ul {
+	nav ul {
+		height: 38px;
 		padding-right: 10%;
 		padding-left: 10%;
 	}
@@ -564,7 +563,11 @@ span
 
 	#logo	{
 		position: relative;
-		padding-top: 50px;
+		padding-top: 63px;
+	}
+
+	#conteneur_slider {
+		margin-top: auto;
 	}
 
 	#slider_image img, #slider_image i, #half_left, #half_right	{
@@ -590,7 +593,7 @@ span
 	}
 
 	#services 	{
-		padding-top: 240px;
+		padding-top: 170px;
 	}
 
 	#services_content	{
@@ -610,8 +613,12 @@ span
 	}
 
 	#project 	{
-		width: 80%;
-		min-width: 320px;
+		width: 68%;
+		min-width: 296px;
+	}
+
+	#project button {
+		width: 74px;
 	}
 
 	#contact_info	{
@@ -631,10 +638,12 @@ span
 
 	form	{
 		text-align: center;
-		width: 320px;
+		width: 100%;
 		height: auto;
 		right: auto;
-		margin-top: 15px;
+		margin-top: 0px;
+		position: relative;
+		background-color: rgba(148,196,240,0.5);
 	}
 }
 
@@ -642,11 +651,11 @@ span
 {
 
 	#half_left, #half_right {
-		top: 275px;
+		top: 175px;
 	}
 
 	#slider_description {
-		top: 210px;
+		top: 130px;
 	}
 
 	#slider_description h1, #slider_description p {
@@ -657,21 +666,21 @@ span
 @media screen and (min-width: 699px) and (max-width: 880px)
 {
 	#slider_description	{
-		top: 112px;
+		top: 70px;
 	}
 
 	#half_left, #half_right {
-		top: 225px;
+		top: 130px;
 	}
 
 	#slider_description h1, #slider_description p {
-	font-size: large;
+	font-size: inherit;
 	}
 
 	#slider_description button {
 		height: 25px;
-		width: 77px;
-		font-size: smaller;
+		width: 81px;
+		font-size: small;
 	}
 
 	form {
@@ -683,16 +692,17 @@ span
 
 @media screen and (min-width: 450px) and (max-width: 699px)
 {
-	#logo {
-		margin-left: auto;
-	}
 
 	#logo img {
-		width: 35%;
+		width: 100%;
 	}
 
 	nav {
 		width: 65%;
+	}
+
+	#conteneur_slider {
+		margin-top: auto;
 	}
 
 	#slider_image #half_right, #slider_image #half_left, #slider_image img, #slider_description button {
@@ -713,5 +723,9 @@ span
 
 	#services {
 		padding-top: 270px;
+	}
+
+	form {
+		width: auto;
 	}
 }
