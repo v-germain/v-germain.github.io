@@ -187,6 +187,9 @@ button
 	background-color: rgb(229,229,229);
 	margin: 0 auto;
 	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .blue_circle
@@ -196,9 +199,6 @@ button
 	background-color: rgb(91,172,210);
 	border: 5px solid white;
 	border-radius: 50%;
-	position: absolute;
-	top: -11px;
-	left: 57px;
 }
 
 #services_content
