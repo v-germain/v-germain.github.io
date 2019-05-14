@@ -59,7 +59,7 @@ nav #active
 
 nav a:visited
 {
-	color: initial; /*couleur inchangé*/
+	color: initial;
 	text-decoration: none;
 }
 
@@ -69,7 +69,7 @@ nav a:visited
 {
 	margin-top: 70px;
 	background-image: url("images/slider/bg1.jpg");
-	background-size: contain; /*cover*/
+	background-size: contain;
 	background-repeat: no-repeat;
 	position: relative;
 	height: 500px;
@@ -375,11 +375,6 @@ button
 	margin: 0 auto;
 }
 
-#portfolio_display i
-{
-	font-size: inherit;
-}
-
 .conteneur
 {
 	position: relative;
@@ -417,8 +412,9 @@ button
 	border: solid 1px white;
 	border-radius: 50%;
 	background-color: rgb(91,172,210);
+	font-size: initial;
 	padding: 8px;
-	top: -13px;
+	top: -17px;
 	right: 10px;
 }
 
